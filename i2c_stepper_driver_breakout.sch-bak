@@ -20,7 +20,13 @@ P 3950 2000
 F 0 "U2" H 4225 2165 50  0000 C CNN
 F 1 "A3909" H 4225 2074 50  0000 C CNN
 F 2 "Locator_Footprints:A3909" H 4000 2050 50  0001 C CNN
-F 3 "" H 4000 2050 50  0001 C CNN
+F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/A3909-Datasheet.ashx" H 4000 2050 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/allegro-microsystems/A3909GLYTR-T/620-1499-1-ND/3979660?cur=EUR&lang=en" H 3950 2000 50  0001 C CNN "Link"
+F 5 "A3909GLYTR-T" H 3950 2000 50  0001 C CNN "MPN"
+F 6 "Allegro MicroSystems" H 3950 2000 50  0001 C CNN "Manufacturer"
+F 7 "10-MSOP-EP" H 3950 2000 50  0001 C CNN "Package"
+F 8 "620-1499-1-ND" H 3950 2000 50  0001 C CNN "SPN"
+F 9 "Half Bridge (4) Driver DC Motors, General Purpose, Stepper Motors DMOS 10-MSOP-EP" H 3950 2000 50  0001 C CNN "description"
 	1    3950 2000
 	1    0    0    -1  
 $EndComp
@@ -73,6 +79,7 @@ F 0 "J2" H 8400 1350 50  0000 C CNN
 F 1 "Conn_01x10" H 8350 1450 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8400 2050 50  0001 C CNN
 F 3 "~" H 8400 2050 50  0001 C CNN
+F 4 "DNP" H 8400 2050 50  0001 C CNN "Assembly"
 	1    8400 2050
 	-1   0    0    1   
 $EndComp
@@ -95,7 +102,13 @@ P 2350 1400
 F 0 "U1" H 3000 100 50  0000 C CNN
 F 1 "PCA9629A" H 2700 800 50  0000 C CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2350 1400 50  0001 C CNN
-F 3 "" H 2350 1400 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/302/PCA9629A-1127761.pdf" H 2350 1400 50  0001 C CNN
+F 4 "https://eu.mouser.com/ProductDetail/NXP-Semiconductors/PCA9629APWJ/?qs=%2Fha2pyFaduirHsohZDD79V6Vp0RsOd1mHZBi0eZIx6U%3D" H 2350 1400 50  0001 C CNN "Link"
+F 5 "PCA9629APWJ " H 2350 1400 50  0001 C CNN "MPN"
+F 6 "NXP Semiconductors " H 2350 1400 50  0001 C CNN "Manufacturer"
+F 7 "16-TSSOP" H 2350 1400 50  0001 C CNN "Package"
+F 8 "771-PCA9629APWJ" H 2350 1400 50  0001 C CNN "SPN"
+F 9 "Bipolar, Unipolar Motor Driver CMOS I²C 16-TSSOP" H 2350 1400 50  0001 C CNN "description"
 	1    2350 1400
 	1    0    0    -1  
 $EndComp
@@ -122,7 +135,7 @@ L Device:C C2
 U 1 1 5FDCA847
 P 6100 2400
 F 0 "C2" H 6215 2446 50  0000 L CNN
-F 1 "20uF" H 6215 2355 50  0000 L CNN
+F 1 "22uF" H 6215 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 2250 50  0001 C CNN
 F 3 "~" H 6100 2400 50  0001 C CNN
 	1    6100 2400
@@ -136,6 +149,7 @@ F 0 "C4" H 6715 2446 50  0000 L CNN
 F 1 "DNP" H 6715 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 2250 50  0001 C CNN
 F 3 "~" H 6600 2400 50  0001 C CNN
+F 4 "DNP" H 6600 2400 50  0001 C CNN "Assembly"
 	1    6600 2400
 	1    0    0    -1  
 $EndComp
@@ -188,13 +202,6 @@ Text Label 4850 2600 2    50   ~ 0
 OUT3
 Text Label 4850 2750 2    50   ~ 0
 OUT4
-Wire Wire Line
-	6100 2250 6350 2250
-Connection ~ 6350 2250
-Wire Wire Line
-	6350 2250 6600 2250
-Text Label 6350 2050 3    50   ~ 0
-VBB
 $Comp
 L Device:C C3
 U 1 1 5FDDB94E
@@ -228,28 +235,15 @@ F 3 "~" H 6100 1550 50  0001 C CNN
 	1    6100 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 1400 6350 1400
 Connection ~ 6350 1700
 Wire Wire Line
 	6350 1700 6600 1700
 Wire Wire Line
 	6100 1700 6350 1700
-Text Label 6350 1150 3    50   ~ 0
-VDD
-Wire Wire Line
-	6350 1400 6350 1150
-Connection ~ 6350 1400
-Wire Wire Line
-	6350 1400 6600 1400
-Wire Wire Line
-	6350 2050 6350 2250
 Text Notes 5100 1600 0    59   ~ 0
 VDD: 4.5V - 5.5V
 Text Notes 5250 2450 0    59   ~ 0
 VBB: 4V - 18V
-Wire Notes Line
-	600  600  7050 600 
 Wire Notes Line
 	7050 3300 600  3300
 Wire Notes Line
@@ -284,6 +278,7 @@ F 0 "R2" H 1470 1296 50  0000 L CNN
 F 1 "DNP" H 1470 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1330 1250 50  0001 C CNN
 F 3 "~" H 1400 1250 50  0001 C CNN
+F 4 "DNP" H 1400 1250 50  0001 C CNN "Assembly"
 	1    1400 1250
 	1    0    0    -1  
 $EndComp
@@ -317,6 +312,7 @@ F 0 "R1" H 1170 1296 50  0000 L CNN
 F 1 "DNP" H 1170 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1030 1250 50  0001 C CNN
 F 3 "~" H 1100 1250 50  0001 C CNN
+F 4 "DNP" H 1100 1250 50  0001 C CNN "Assembly"
 	1    1100 1250
 	1    0    0    -1  
 $EndComp
@@ -388,6 +384,7 @@ F 0 "J1" H 7950 2550 50  0000 C CNN
 F 1 "Conn_01x10" H 7950 2450 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8000 1950 50  0001 C CNN
 F 3 "~" H 8000 1950 50  0001 C CNN
+F 4 "DNP" H 8000 1950 50  0001 C CNN "Assembly"
 	1    8000 1950
 	1    0    0    -1  
 $EndComp
@@ -446,12 +443,18 @@ $EndComp
 $Comp
 L Locator_Library:MAX17291 U3
 U 1 1 5FE52B80
-P 2450 4450
-F 0 "U3" H 2850 4731 50  0000 C CNN
-F 1 "MAX17291" H 2850 4640 50  0000 C CNN
-F 2 "Locator_Footprints:MAX17291ATA+T" H 2500 4500 50  0001 C CNN
-F 3 "" H 2500 4500 50  0001 C CNN
-	1    2450 4450
+P 2450 4350
+F 0 "U3" H 3150 4400 50  0000 C CNN
+F 1 "MAX17291" H 2850 4100 50  0000 C CNN
+F 2 "Locator_Footprints:MAX17291ATA+T" H 2500 4400 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/256/MAX17291-1915631.pdf" H 2500 4400 50  0001 C CNN
+F 4 "https://www.mouser.de/ProductDetail/Maxim-Integrated/MAX17291ANT%2b/?qs=zW32dvEIR3ttuHx2ZgpPng%3D%3D" H 2450 4350 50  0001 C CNN "Link"
+F 5 "MAX17291ANT+" H 2450 4350 50  0001 C CNN "MPN"
+F 6 "Maxim Integrated " H 2450 4350 50  0001 C CNN "Manufacturer"
+F 7 "TDFN" H 2450 4350 50  0001 C CNN "Package"
+F 8 "700-MAX17291ANT+ " H 2450 4350 50  0001 C CNN "SPN"
+F 9 "Switching Voltage Regulators High-Voltage microPower Boost Converter " H 2450 4350 50  0001 C CNN "description"
+	1    2450 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -459,9 +462,15 @@ L Connector_Generic:Conn_01x04 J3
 U 1 1 5FDD840F
 P 10250 1900
 F 0 "J3" H 10330 1892 50  0000 L CNN
-F 1 "B4B-PH-K-S" H 10330 1801 50  0000 L CNN
+F 1 "S4B-PH-SM4-TB" H 10330 1801 50  0000 L CNN
 F 2 "Locator_Footprints:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal" H 10250 1900 50  0001 C CNN
-F 3 "~" H 10250 1900 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10250 1900 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/jst-sales-america-inc/S4B-PH-SM4-TB-LF-SN/455-1751-1-ND/926848" H 10250 1900 50  0001 C CNN "Link"
+F 5 "S4B-PH-SM4-TB(LF)(SN)" H 10250 1900 50  0001 C CNN "MPN"
+F 6 "JST Sales America Inc." H 10250 1900 50  0001 C CNN "Manufacturer"
+F 7 "SMD" H 10250 1900 50  0001 C CNN "Package"
+F 8 "455-1751-1-ND" H 10250 1900 50  0001 C CNN "SPN"
+F 9 "Connector Header Surface Mount, Right Angle 4 position 0.079\" (2.00mm)" H 10250 1900 50  0001 C CNN "description"
 	1    10250 1900
 	1    0    0    -1  
 $EndComp
@@ -474,6 +483,306 @@ F 1 "GND" H 4205 2827 50  0000 C CNN
 F 2 "" H 4200 3000 50  0001 C CNN
 F 3 "" H 4200 3000 50  0001 C CNN
 	1    4200 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 3650 0    79   ~ 0
+5.5V Boost for logic and motor
+Wire Wire Line
+	2750 5000 2850 5000
+Connection ~ 2850 5000
+Wire Wire Line
+	2850 5000 2950 5000
+Wire Wire Line
+	2850 5000 2850 5100
+$Comp
+L power:GND #PWR0111
+U 1 1 5FDD3CA7
+P 2850 5100
+F 0 "#PWR0111" H 2850 4850 50  0001 C CNN
+F 1 "GND" H 2855 4927 50  0000 C CNN
+F 2 "" H 2850 5100 50  0001 C CNN
+F 3 "" H 2850 5100 50  0001 C CNN
+	1    2850 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4450 2150 4450
+$Comp
+L Device:L L1
+U 1 1 5FDD6F9C
+P 2450 4150
+F 0 "L1" V 2640 4150 50  0000 C CNN
+F 1 "4.7uH" V 2549 4150 50  0000 C CNN
+F 2 "Locator_Footprints:L_LQH44P" H 2450 4150 50  0001 C CNN
+F 3 "~" H 2450 4150 50  0001 C CNN
+	1    2450 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 4250 2850 4150
+Wire Wire Line
+	2850 4150 2600 4150
+Wire Wire Line
+	2300 4150 2150 4150
+Wire Wire Line
+	2150 4150 2150 4450
+Connection ~ 2150 4450
+$Comp
+L Device:C C5
+U 1 1 5FDDC87A
+P 1400 4600
+F 0 "C5" H 1515 4646 50  0000 L CNN
+F 1 "22uF" H 1515 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1438 4450 50  0001 C CNN
+F 3 "~" H 1400 4600 50  0001 C CNN
+	1    1400 4600
+	1    0    0    -1  
+$EndComp
+Text Label 2250 4800 0    50   ~ 0
+EN
+Wire Wire Line
+	2350 4800 2250 4800
+$Comp
+L power:GND #PWR0112
+U 1 1 5FDE2343
+P 1400 4750
+F 0 "#PWR0112" H 1400 4500 50  0001 C CNN
+F 1 "GND" H 1405 4577 50  0000 C CNN
+F 2 "" H 1400 4750 50  0001 C CNN
+F 3 "" H 1400 4750 50  0001 C CNN
+	1    1400 4750
+	1    0    0    -1  
+$EndComp
+Text Label 1250 4450 0    50   ~ 0
+VIN_BOOST
+Wire Wire Line
+	1400 4450 1800 4450
+$Comp
+L Device:C C6
+U 1 1 5FDEAA14
+P 1800 4600
+F 0 "C6" H 1915 4646 50  0000 L CNN
+F 1 "100nF" H 1915 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 4450 50  0001 C CNN
+F 3 "~" H 1800 4600 50  0001 C CNN
+	1    1800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5FDEAA1A
+P 1800 4750
+F 0 "#PWR0113" H 1800 4500 50  0001 C CNN
+F 1 "GND" H 1805 4577 50  0000 C CNN
+F 2 "" H 1800 4750 50  0001 C CNN
+F 3 "" H 1800 4750 50  0001 C CNN
+	1    1800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5FDEDF4B
+P 4450 4600
+F 0 "C8" H 4565 4646 50  0000 L CNN
+F 1 "22uF" H 4565 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 4450 50  0001 C CNN
+F 3 "~" H 4450 4600 50  0001 C CNN
+	1    4450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5FDEDF51
+P 4450 4750
+F 0 "#PWR0114" H 4450 4500 50  0001 C CNN
+F 1 "GND" H 4455 4577 50  0000 C CNN
+F 2 "" H 4450 4750 50  0001 C CNN
+F 3 "" H 4450 4750 50  0001 C CNN
+	1    4450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5FDEDF57
+P 4000 4600
+F 0 "C7" H 4115 4646 50  0000 L CNN
+F 1 "100nF" H 4115 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 4450 50  0001 C CNN
+F 3 "~" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5FDEDF5D
+P 4000 4750
+F 0 "#PWR0115" H 4000 4500 50  0001 C CNN
+F 1 "GND" H 4005 4577 50  0000 C CNN
+F 2 "" H 4000 4750 50  0001 C CNN
+F 3 "" H 4000 4750 50  0001 C CNN
+	1    4000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4450 1250 4450
+Connection ~ 1400 4450
+Text Label 4750 4450 2    50   ~ 0
+VOUT
+$Comp
+L Device:R R5
+U 1 1 5FDFBDC3
+P 3500 4600
+F 0 "R5" H 3570 4646 50  0000 L CNN
+F 1 "1.4M" H 3570 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4600 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 3500 4600 50  0001 C CNN
+F 4 "https://www.mouser.de/ProductDetail/KOA-Speer/RK73H1JTTD1404F/?qs=%2Fha2pyFadujzle8xjALcvLDCByry4CFE4crEq4mQerqxX%252BnUx4sZzg%3D%3D" H 3500 4600 50  0001 C CNN "Link"
+F 5 "RK73H1JTTD1404F" H 3500 4600 50  0001 C CNN "MPN"
+F 6 "KOA Speer Electronics, Inc." H 3500 4600 50  0001 C CNN "Manufacturer"
+F 7 "0603" H 3500 4600 50  0001 C CNN "Package"
+F 8 "660-RK73H1JTTD1404F " H 3500 4600 50  0001 C CNN "SPN"
+F 9 "1.4 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 3500 4600 50  0001 C CNN "description"
+F 10 "DNP" H 3500 4600 50  0001 C CNN "Assembly"
+	1    3500 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 4450
+Wire Wire Line
+	3500 4450 3350 4450
+$Comp
+L Device:R R6
+U 1 1 5FDFC99D
+P 3500 4950
+F 0 "R6" H 3570 4996 50  0000 L CNN
+F 1 "412K" H 3570 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4950 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/219/RN73H-1843478.pdf" H 3500 4950 50  0001 C CNN
+F 4 "https://www.mouser.de/ProductDetail/KOA-Speer/RN73H1JTTD4123B25/?qs=%2Fha2pyFaduicUvIwceowioochi5c4TS6Cm3WX9AhKTnL0L4PmJpqqA%3D%3D" H 3500 4950 50  0001 C CNN "Link"
+F 5 "RN73H1JTTD4123B25" H 3500 4950 50  0001 C CNN "MPN"
+F 6 "KOA Speer Electronics, Inc." H 3500 4950 50  0001 C CNN "Manufacturer"
+F 7 "0603" H 3500 4950 50  0001 C CNN "Package"
+F 8 "660-RN73H1JTD4123B25 " H 3500 4950 50  0001 C CNN "SPN"
+F 9 "412 kOhms ±0.1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Metal Film" H 3500 4950 50  0001 C CNN "description"
+	1    3500 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4800 3500 4800
+Wire Wire Line
+	3500 4800 3500 4750
+Connection ~ 3500 4800
+Wire Wire Line
+	3500 5100 2850 5100
+Connection ~ 2850 5100
+Connection ~ 4000 4450
+Connection ~ 4450 4450
+Wire Wire Line
+	4450 4450 4750 4450
+Wire Wire Line
+	4000 4450 4450 4450
+Wire Wire Line
+	3500 4450 4000 4450
+Text Notes 5850 3750 0    79   ~ 0
+Jumper Selection for use \nof internal or external power supply
+Wire Notes Line
+	600  3400 5300 3400
+Wire Notes Line
+	5300 3400 5300 5600
+Wire Notes Line
+	5300 5600 600  5600
+Wire Notes Line
+	600  5600 600  3400
+Wire Notes Line
+	5400 3400 5400 5600
+Wire Notes Line
+	5400 5600 8350 5600
+Wire Notes Line
+	8350 5600 8350 3400
+Wire Notes Line
+	8350 3400 5400 3400
+Connection ~ 1800 4450
+Wire Wire Line
+	1800 4450 2150 4450
+Wire Wire Line
+	6650 4200 6450 4200
+Wire Wire Line
+	7800 1650 7600 1650
+Wire Wire Line
+	7800 1750 7600 1750
+Wire Wire Line
+	8800 1650 8600 1650
+Wire Wire Line
+	8800 1750 8600 1750
+Text Label 7600 1650 0    50   ~ 0
+OUT1
+Text Label 7600 1750 0    50   ~ 0
+OUT2
+Text Label 8800 1650 2    50   ~ 0
+OUT3
+Text Label 8800 1750 2    50   ~ 0
+OUT4
+Text Label 6450 4200 0    50   ~ 0
+VOUT
+Wire Wire Line
+	6850 4350 6850 4550
+Text Label 6850 4550 1    50   ~ 0
+VBB
+Wire Wire Line
+	7050 4200 7250 4200
+Text Label 7250 4200 2    50   ~ 0
+VIN_M
+Wire Notes Line
+	350  750  6800 750 
+Wire Wire Line
+	6350 2250 6600 2250
+Connection ~ 6350 2250
+Wire Wire Line
+	6100 2250 6350 2250
+Wire Wire Line
+	6350 2050 6350 2250
+Text Label 6350 2050 3    50   ~ 0
+VBB
+Wire Wire Line
+	6350 1200 6350 1400
+Text Label 6350 1200 3    50   ~ 0
+VDD
+Wire Wire Line
+	6100 1400 6350 1400
+Connection ~ 6350 1400
+Wire Wire Line
+	6350 1400 6600 1400
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5FE7649B
+P 6850 4200
+F 0 "JP1" H 6850 4405 50  0000 C CNN
+F 1 "VBB_Selection" H 6850 4314 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6850 4200 50  0001 C CNN
+F 3 "~" H 6850 4200 50  0001 C CNN
+	1    6850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4950 6450 4950
+Text Label 6450 4950 0    50   ~ 0
+VOUT
+Wire Wire Line
+	6850 5100 6850 5300
+Text Label 6850 5300 1    50   ~ 0
+VDD
+Wire Wire Line
+	7050 4950 7250 4950
+Text Label 7250 4950 2    50   ~ 0
+VIN_IC
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 5FE8918D
+P 6850 4950
+F 0 "JP2" H 6850 5155 50  0000 C CNN
+F 1 "VBB_Selection" H 6850 5064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6850 4950 50  0001 C CNN
+F 3 "~" H 6850 4950 50  0001 C CNN
+	1    6850 4950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
