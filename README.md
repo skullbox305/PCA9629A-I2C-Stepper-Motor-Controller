@@ -1,1 +1,11 @@
-PCA9629A_I2C_Stepper_Motor_Controller_Breakout
+# PCA9629A I²C Stepper Motor Controller Breakout Board 
+
+- ## Features
+
+  - ...
+
+![image info](./i2c_stepper_driver_breakout_front.png)
+
+![image info](./i2c_stepper_driver_breakout_back.png)
+
+

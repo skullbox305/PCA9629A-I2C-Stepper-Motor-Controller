@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PCA9629A I²C Stepper Motor Controller Breakout Board"
-Date ""
+Date "2020-12-20"
 Rev "1"
 Comp "Igor Knippenberg"
 Comment1 ""
@@ -427,19 +427,6 @@ F 3 "" H 9050 2450 50  0001 C CNN
 	1    9050 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 2450 7350 2450
-$Comp
-L power:GND #PWR0109
-U 1 1 5FE45CE7
-P 7350 2450
-F 0 "#PWR0109" H 7350 2200 50  0001 C CNN
-F 1 "GND" H 7355 2277 50  0000 C CNN
-F 2 "" H 7350 2450 50  0001 C CNN
-F 3 "" H 7350 2450 50  0001 C CNN
-	1    7350 2450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Locator_Library:MAX17291 U3
 U 1 1 5FE52B80
@@ -513,8 +500,14 @@ U 1 1 5FDD6F9C
 P 2450 4150
 F 0 "L1" V 2640 4150 50  0000 C CNN
 F 1 "4.7uH" V 2549 4150 50  0000 C CNN
-F 2 "Locator_Footprints:L_LQH44P" H 2450 4150 50  0001 C CNN
-F 3 "~" H 2450 4150 50  0001 C CNN
+F 2 "Inductor_SMD:L_1008_2520Metric" H 2450 4150 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9128.pdf" H 2450 4150 50  0001 C CNN
+F 4 "LQH2HPZ4R7MGRL" H 2450 4150 50  0001 C CNN "MPN"
+F 5 "Murata Electronics" H 2450 4150 50  0001 C CNN "Manufacturer"
+F 6 "490-15902-1-ND" H 2450 4150 50  0001 C CNN "SPN"
+F 7 "1008 (2520 Metric) " H 2450 4150 50  0001 C CNN "Package"
+F 8 "https://www.digikey.de/product-detail/en/murata-electronics/LQH2HPZ4R7MGRL/490-15902-1-ND/6800567" H 2450 4150 50  0001 C CNN "Link"
+F 9 " 4.7µH Shielded Wirewound Inductor 1A 360mOhm Max 1008 (2520 Metric) " H 2450 4150 50  0001 C CNN "description"
 	1    2450 4150
 	0    -1   -1   0   
 $EndComp
@@ -634,7 +627,7 @@ U 1 1 5FDFBDC3
 P 3500 4600
 F 0 "R5" H 3570 4646 50  0000 L CNN
 F 1 "1.4M" H 3570 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4600 50  0001 C CNN
 F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 3500 4600 50  0001 C CNN
 F 4 "https://www.mouser.de/ProductDetail/KOA-Speer/RK73H1JTTD1404F/?qs=%2Fha2pyFadujzle8xjALcvLDCByry4CFE4crEq4mQerqxX%252BnUx4sZzg%3D%3D" H 3500 4600 50  0001 C CNN "Link"
 F 5 "RK73H1JTTD1404F" H 3500 4600 50  0001 C CNN "MPN"
@@ -655,7 +648,7 @@ U 1 1 5FDFC99D
 P 3500 4950
 F 0 "R6" H 3570 4996 50  0000 L CNN
 F 1 "412K" H 3570 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4950 50  0001 C CNN
 F 3 "https://eu.mouser.com/datasheet/2/219/RN73H-1843478.pdf" H 3500 4950 50  0001 C CNN
 F 4 "https://www.mouser.de/ProductDetail/KOA-Speer/RN73H1JTTD4123B25/?qs=%2Fha2pyFaduicUvIwceowioochi5c4TS6Cm3WX9AhKTnL0L4PmJpqqA%3D%3D" H 3500 4950 50  0001 C CNN "Link"
 F 5 "RN73H1JTTD4123B25" H 3500 4950 50  0001 C CNN "MPN"
@@ -704,7 +697,7 @@ Connection ~ 1800 4450
 Wire Wire Line
 	1800 4450 2150 4450
 Wire Wire Line
-	6650 4200 6450 4200
+	5950 4250 5750 4250
 Wire Wire Line
 	7800 1650 7600 1650
 Wire Wire Line
@@ -716,23 +709,23 @@ Wire Wire Line
 Text Label 7600 1650 0    50   ~ 0
 OUT1
 Text Label 7600 1750 0    50   ~ 0
-OUT2
-Text Label 8800 1650 2    50   ~ 0
 OUT3
+Text Label 8800 1650 2    50   ~ 0
+OUT2
 Text Label 8800 1750 2    50   ~ 0
 OUT4
-Text Label 6450 4200 0    50   ~ 0
+Text Label 5750 4250 0    50   ~ 0
 VOUT
 Wire Wire Line
-	6850 4350 6850 4550
-Text Label 6850 4550 1    50   ~ 0
+	6150 4400 6150 4600
+Text Label 6150 4600 1    50   ~ 0
 VBB
 Wire Wire Line
-	7050 4200 7250 4200
-Text Label 7250 4200 2    50   ~ 0
+	6350 4250 6550 4250
+Text Label 6550 4250 2    50   ~ 0
 VIN_M
 Wire Notes Line
-	350  750  6800 750 
+	600  600  7050 600 
 Wire Wire Line
 	6350 2250 6600 2250
 Connection ~ 6350 2250
@@ -754,35 +747,109 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP1
 U 1 1 5FE7649B
-P 6850 4200
-F 0 "JP1" H 6850 4405 50  0000 C CNN
-F 1 "VBB_Selection" H 6850 4314 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6850 4200 50  0001 C CNN
-F 3 "~" H 6850 4200 50  0001 C CNN
-	1    6850 4200
+P 6150 4250
+F 0 "JP1" H 6150 4455 50  0000 C CNN
+F 1 "VBB_Selection" H 6150 4364 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6150 4250 50  0001 C CNN
+F 3 "~" H 6150 4250 50  0001 C CNN
+	1    6150 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 4950 6450 4950
-Text Label 6450 4950 0    50   ~ 0
+	7350 4250 7150 4250
+Text Label 7150 4250 0    50   ~ 0
 VOUT
 Wire Wire Line
-	6850 5100 6850 5300
-Text Label 6850 5300 1    50   ~ 0
+	7550 4400 7550 4600
+Text Label 7550 4600 1    50   ~ 0
 VDD
 Wire Wire Line
-	7050 4950 7250 4950
-Text Label 7250 4950 2    50   ~ 0
+	7750 4250 7950 4250
+Text Label 7950 4250 2    50   ~ 0
 VIN_IC
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP2
 U 1 1 5FE8918D
-P 6850 4950
-F 0 "JP2" H 6850 5155 50  0000 C CNN
-F 1 "VBB_Selection" H 6850 5064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6850 4950 50  0001 C CNN
-F 3 "~" H 6850 4950 50  0001 C CNN
-	1    6850 4950
+P 7550 4250
+F 0 "JP2" H 7550 4455 50  0000 C CNN
+F 1 "VDD_Selection" H 7550 4364 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 7550 4250 50  0001 C CNN
+F 3 "~" H 7550 4250 50  0001 C CNN
+	1    7550 4250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7800 2250 7600 2250
+Wire Wire Line
+	7800 2150 7600 2150
+Wire Wire Line
+	7800 2050 7600 2050
+Wire Wire Line
+	7800 1850 7600 1850
+Wire Wire Line
+	8600 1850 8800 1850
+Wire Wire Line
+	8600 2050 8800 2050
+Wire Wire Line
+	8600 2150 8800 2150
+Wire Wire Line
+	8600 2250 8800 2250
+Wire Wire Line
+	8600 2350 8800 2350
+Text Label 7400 2350 0    50   ~ 0
+VIN_BOOST
+Wire Wire Line
+	7400 2350 7800 2350
+Wire Wire Line
+	7800 2450 7600 2450
+Text Label 7600 2450 0    50   ~ 0
+EN
+Text Label 7600 2050 0    50   ~ 0
+P2
+Text Label 7600 2150 0    50   ~ 0
+P1
+Text Label 7600 2250 0    50   ~ 0
+P0
+Text Label 8800 1850 2    50   ~ 0
+VIN_M
+Text Label 7600 1850 0    50   ~ 0
+VIN_IC
+Wire Wire Line
+	7350 1950 7800 1950
+$Comp
+L power:GND #PWR0109
+U 1 1 5FE856A4
+P 7350 1950
+F 0 "#PWR0109" H 7350 1700 50  0001 C CNN
+F 1 "GND" H 7355 1777 50  0000 C CNN
+F 2 "" H 7350 1950 50  0001 C CNN
+F 3 "" H 7350 1950 50  0001 C CNN
+	1    7350 1950
+	1    0    0    -1  
+$EndComp
+Text Label 8800 2050 2    50   ~ 0
+INT
+Text Label 8800 2150 2    50   ~ 0
+SCL
+Text Label 8800 2250 2    50   ~ 0
+SDA
+Text Label 8800 2350 2    50   ~ 0
+RESET
+Wire Wire Line
+	9050 1950 9050 2000
+Wire Wire Line
+	8600 1950 9050 1950
+$Comp
+L power:GND #PWR0116
+U 1 1 5FE93AD8
+P 9050 2000
+F 0 "#PWR0116" H 9050 1750 50  0001 C CNN
+F 1 "GND" H 9055 1827 50  0000 C CNN
+F 2 "" H 9050 2000 50  0001 C CNN
+F 3 "" H 9050 2000 50  0001 C CNN
+	1    9050 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 5350 0    50   ~ 0
+PCA9629A and motor are powered by the internal boost by \ndefault (5.5V). Cut and solder both jumpers to power the \ndriver (VIN_IC) and motor (VIN_M) through the external pin headers.
 $EndSCHEMATC
