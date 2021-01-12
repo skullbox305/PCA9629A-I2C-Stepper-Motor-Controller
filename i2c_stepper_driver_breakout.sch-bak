@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PCA9629A I²C Stepper Motor Controller Breakout Board"
-Date ""
+Date "2020-12-20"
 Rev "1"
 Comp "Igor Knippenberg"
 Comment1 ""
@@ -102,12 +102,12 @@ P 2350 1400
 F 0 "U1" H 3000 100 50  0000 C CNN
 F 1 "PCA9629A" H 2700 800 50  0000 C CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2350 1400 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/302/PCA9629A-1127761.pdf" H 2350 1400 50  0001 C CNN
-F 4 "https://eu.mouser.com/ProductDetail/NXP-Semiconductors/PCA9629APWJ/?qs=%2Fha2pyFaduirHsohZDD79V6Vp0RsOd1mHZBi0eZIx6U%3D" H 2350 1400 50  0001 C CNN "Link"
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9629A.pdf" H 2350 1400 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/nxp-usa-inc/PCA9629APWJ/568-11488-1-ND/4864512" H 2350 1400 50  0001 C CNN "Link"
 F 5 "PCA9629APWJ " H 2350 1400 50  0001 C CNN "MPN"
 F 6 "NXP Semiconductors " H 2350 1400 50  0001 C CNN "Manufacturer"
 F 7 "16-TSSOP" H 2350 1400 50  0001 C CNN "Package"
-F 8 "771-PCA9629APWJ" H 2350 1400 50  0001 C CNN "SPN"
+F 8 "568-11488-1-ND" H 2350 1400 50  0001 C CNN "SPN"
 F 9 "Bipolar, Unipolar Motor Driver CMOS I²C 16-TSSOP" H 2350 1400 50  0001 C CNN "description"
 	1    2350 1400
 	1    0    0    -1  
@@ -137,7 +137,13 @@ P 6100 2400
 F 0 "C2" H 6215 2446 50  0000 L CNN
 F 1 "22uF" H 6215 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 2250 50  0001 C CNN
-F 3 "~" H 6100 2400 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21A226MAYNNNE_Spec.pdf" H 6100 2400 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/samsung-electro-mechanics/CL21A226MAYNNNE/1276-CL21A226MAYNNNECT-ND/12698679" H 6100 2400 50  0001 C CNN "Link"
+F 5 "CL21A226MAYNNNE" H 6100 2400 50  0001 C CNN "MPN"
+F 6 "Samsung Electro-Mechanics" H 6100 2400 50  0001 C CNN "Manufacturer"
+F 7 "0805 (2012 Metric) " H 6100 2400 50  0001 C CNN "Package"
+F 8 "1276-CL21A226MAYNNNECT-ND" H 6100 2400 50  0001 C CNN "SPN"
+F 9 "22µF ±20% 25V Ceramic Capacitor X5R 0805 (2012 Metric)" H 6100 2400 50  0001 C CNN "description"
 	1    6100 2400
 	1    0    0    -1  
 $EndComp
@@ -209,7 +215,13 @@ P 6600 1550
 F 0 "C3" H 6715 1596 50  0000 L CNN
 F 1 "100nF" H 6715 1505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6638 1400 50  0001 C CNN
-F 3 "~" H 6600 1550 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104JA55-01.pdf" H 6600 1550 50  0001 C CNN
+F 4 "0.1µF ±5% 16V Ceramic Capacitor X7R 0402 (1005 Metric)" H 6600 1550 50  0001 C CNN "description"
+F 5 "https://www.digikey.com/product-detail/en/murata-electronics/GCM155R71C104JA55D/490-16433-1-ND/7363415" H 6600 1550 50  0001 C CNN "Link"
+F 6 "GCM155R71C104JA55D" H 6600 1550 50  0001 C CNN "MPN"
+F 7 "Murata Electronics" H 6600 1550 50  0001 C CNN "Manufacturer"
+F 8 "0402 (1005 Metric) " H 6600 1550 50  0001 C CNN "Package"
+F 9 "490-16433-1-ND" H 6600 1550 50  0001 C CNN "SPN"
 	1    6600 1550
 	1    0    0    -1  
 $EndComp
@@ -231,7 +243,13 @@ P 6100 1550
 F 0 "C1" H 6215 1596 50  0000 L CNN
 F 1 "4.7uF" H 6215 1505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6138 1400 50  0001 C CNN
-F 3 "~" H 6100 1550 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 6100 1550 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/tdk-corporation/C1005X5R1A475K050BC/445-13820-1-ND/3955486" H 6100 1550 50  0001 C CNN "Link"
+F 5 "C1005X5R1A475K050BC" H 6100 1550 50  0001 C CNN "MPN"
+F 6 "TDK Corporation" H 6100 1550 50  0001 C CNN "Manufacturer"
+F 7 "0402 (1005 Metric) " H 6100 1550 50  0001 C CNN "Package"
+F 8 "445-13820-1-ND" H 6100 1550 50  0001 C CNN "SPN"
+F 9 "4.7µF ±10% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 6100 1550 50  0001 C CNN "description"
 	1    6100 1550
 	1    0    0    -1  
 $EndComp
@@ -289,7 +307,13 @@ P 1700 1250
 F 0 "R3" H 1770 1296 50  0000 L CNN
 F 1 "10K" H 1770 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1630 1250 50  0001 C CNN
-F 3 "~" H 1700 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1700 1250 50  0001 C CNN
+F 4 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric)  Thick Film" H 1700 1250 50  0001 C CNN "description"
+F 5 "https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10-0KLRCT-ND/729470" H 1700 1250 50  0001 C CNN "Link"
+F 6 "RC0402FR-0710KL" H 1700 1250 50  0001 C CNN "MPN"
+F 7 "Yageo" H 1700 1250 50  0001 C CNN "Manufacturer"
+F 8 "0402 (1005 Metric) " H 1700 1250 50  0001 C CNN "Package"
+F 9 "311-10.0KLRCT-ND" H 1700 1250 50  0001 C CNN "SPN"
 	1    1700 1250
 	1    0    0    -1  
 $EndComp
@@ -300,7 +324,13 @@ P 2000 1250
 F 0 "R4" H 2070 1296 50  0000 L CNN
 F 1 "10K" H 2070 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1930 1250 50  0001 C CNN
-F 3 "~" H 2000 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2000 1250 50  0001 C CNN
+F 4 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric)  Thick Film" H 2000 1250 50  0001 C CNN "description"
+F 5 "https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10-0KLRCT-ND/729470" H 2000 1250 50  0001 C CNN "Link"
+F 6 "RC0402FR-0710KL" H 2000 1250 50  0001 C CNN "MPN"
+F 7 "Yageo" H 2000 1250 50  0001 C CNN "Manufacturer"
+F 8 "0402 (1005 Metric) " H 2000 1250 50  0001 C CNN "Package"
+F 9 "311-10.0KLRCT-ND" H 2000 1250 50  0001 C CNN "SPN"
 	1    2000 1250
 	1    0    0    -1  
 $EndComp
@@ -527,7 +557,13 @@ P 1400 4600
 F 0 "C5" H 1515 4646 50  0000 L CNN
 F 1 "22uF" H 1515 4555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1438 4450 50  0001 C CNN
-F 3 "~" H 1400 4600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21A226MAYNNNE_Spec.pdf" H 1400 4600 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/samsung-electro-mechanics/CL21A226MAYNNNE/1276-CL21A226MAYNNNECT-ND/12698679" H 1400 4600 50  0001 C CNN "Link"
+F 5 "CL21A226MAYNNNE" H 1400 4600 50  0001 C CNN "MPN"
+F 6 "Samsung Electro-Mechanics" H 1400 4600 50  0001 C CNN "Manufacturer"
+F 7 "0805 (2012 Metric) " H 1400 4600 50  0001 C CNN "Package"
+F 8 "1276-CL21A226MAYNNNECT-ND" H 1400 4600 50  0001 C CNN "SPN"
+F 9 "22µF ±20% 25V Ceramic Capacitor X5R 0805 (2012 Metric)" H 1400 4600 50  0001 C CNN "description"
 	1    1400 4600
 	1    0    0    -1  
 $EndComp
@@ -557,7 +593,13 @@ P 1800 4600
 F 0 "C6" H 1915 4646 50  0000 L CNN
 F 1 "1nF" H 1915 4555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 4450 50  0001 C CNN
-F 3 "~" H 1800 4600 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 1800 4600 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/avx-corporation/0402YC102KAT2A/478-6197-1-ND/2391396" H 1800 4600 50  0001 C CNN "Link"
+F 5 "0402YC102KAT2A" H 1800 4600 50  0001 C CNN "MPN"
+F 6 "AVX Corporation" H 1800 4600 50  0001 C CNN "Manufacturer"
+F 7 "0402 (1005 Metric) " H 1800 4600 50  0001 C CNN "Package"
+F 8 "478-6197-1-ND" H 1800 4600 50  0001 C CNN "SPN"
+F 9 "1000pF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)" H 1800 4600 50  0001 C CNN "description"
 	1    1800 4600
 	1    0    0    -1  
 $EndComp
@@ -579,7 +621,13 @@ P 4450 4600
 F 0 "C8" H 4565 4646 50  0000 L CNN
 F 1 "22uF" H 4565 4555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 4450 50  0001 C CNN
-F 3 "~" H 4450 4600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21A226MAYNNNE_Spec.pdf" H 4450 4600 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/en/samsung-electro-mechanics/CL21A226MAYNNNE/1276-CL21A226MAYNNNECT-ND/12698679" H 4450 4600 50  0001 C CNN "Link"
+F 5 "CL21A226MAYNNNE" H 4450 4600 50  0001 C CNN "MPN"
+F 6 "Samsung Electro-Mechanics" H 4450 4600 50  0001 C CNN "Manufacturer"
+F 7 "0805 (2012 Metric) " H 4450 4600 50  0001 C CNN "Package"
+F 8 "1276-CL21A226MAYNNNECT-ND" H 4450 4600 50  0001 C CNN "SPN"
+F 9 "22µF ±20% 25V Ceramic Capacitor X5R 0805 (2012 Metric)" H 4450 4600 50  0001 C CNN "description"
 	1    4450 4600
 	1    0    0    -1  
 $EndComp
@@ -601,7 +649,13 @@ P 4000 4600
 F 0 "C7" H 4115 4646 50  0000 L CNN
 F 1 "100nF" H 4115 4555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 4450 50  0001 C CNN
-F 3 "~" H 4000 4600 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104JA55-01.pdf" H 4000 4600 50  0001 C CNN
+F 4 "0.1µF ±5% 16V Ceramic Capacitor X7R 0402 (1005 Metric)" H 4000 4600 50  0001 C CNN "description"
+F 5 "https://www.digikey.com/product-detail/en/murata-electronics/GCM155R71C104JA55D/490-16433-1-ND/7363415" H 4000 4600 50  0001 C CNN "Link"
+F 6 "GCM155R71C104JA55D" H 4000 4600 50  0001 C CNN "MPN"
+F 7 "Murata Electronics" H 4000 4600 50  0001 C CNN "Manufacturer"
+F 8 "0402 (1005 Metric) " H 4000 4600 50  0001 C CNN "Package"
+F 9 "490-16433-1-ND" H 4000 4600 50  0001 C CNN "SPN"
 	1    4000 4600
 	1    0    0    -1  
 $EndComp
@@ -627,15 +681,15 @@ U 1 1 5FDFBDC3
 P 3500 4600
 F 0 "R5" H 3570 4646 50  0000 L CNN
 F 1 "1.4M" H 3570 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4600 50  0001 C CNN
 F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 3500 4600 50  0001 C CNN
-F 4 "https://www.mouser.de/ProductDetail/KOA-Speer/RK73H1JTTD1404F/?qs=%2Fha2pyFadujzle8xjALcvLDCByry4CFE4crEq4mQerqxX%252BnUx4sZzg%3D%3D" H 3500 4600 50  0001 C CNN "Link"
+F 4 "https://www.digikey.de/product-detail/en/koa-speer-electronics-inc/RK73H1JTTD1404F/2019-RK73H1JTTD1404FCT-ND/9847488" H 3500 4600 50  0001 C CNN "Link"
 F 5 "RK73H1JTTD1404F" H 3500 4600 50  0001 C CNN "MPN"
 F 6 "KOA Speer Electronics, Inc." H 3500 4600 50  0001 C CNN "Manufacturer"
-F 7 "0603" H 3500 4600 50  0001 C CNN "Package"
-F 8 "660-RK73H1JTTD1404F " H 3500 4600 50  0001 C CNN "SPN"
+F 7 "0603 (1608 Metric) " H 3500 4600 50  0001 C CNN "Package"
+F 8 "2019-RK73H1JTTD1404FCT-ND" H 3500 4600 50  0001 C CNN "SPN"
 F 9 "1.4 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 3500 4600 50  0001 C CNN "description"
-F 10 "DNP" H 3500 4600 50  0001 C CNN "Assembly"
+F 10 "" H 3500 4600 50  0001 C CNN "Assembly"
 	1    3500 4600
 	1    0    0    -1  
 $EndComp
@@ -648,13 +702,13 @@ U 1 1 5FDFC99D
 P 3500 4950
 F 0 "R6" H 3570 4996 50  0000 L CNN
 F 1 "412K" H 3570 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4950 50  0001 C CNN
 F 3 "https://eu.mouser.com/datasheet/2/219/RN73H-1843478.pdf" H 3500 4950 50  0001 C CNN
-F 4 "https://www.mouser.de/ProductDetail/KOA-Speer/RN73H1JTTD4123B25/?qs=%2Fha2pyFaduicUvIwceowioochi5c4TS6Cm3WX9AhKTnL0L4PmJpqqA%3D%3D" H 3500 4950 50  0001 C CNN "Link"
+F 4 "https://www.digikey.de/product-detail/en/koa-speer-electronics-inc/RN73H1JTTD4123B25/2019-RN73H1JTTD4123B25CT-ND/10707107" H 3500 4950 50  0001 C CNN "Link"
 F 5 "RN73H1JTTD4123B25" H 3500 4950 50  0001 C CNN "MPN"
 F 6 "KOA Speer Electronics, Inc." H 3500 4950 50  0001 C CNN "Manufacturer"
-F 7 "0603" H 3500 4950 50  0001 C CNN "Package"
-F 8 "660-RN73H1JTD4123B25 " H 3500 4950 50  0001 C CNN "SPN"
+F 7 "0603 (1608 Metric) " H 3500 4950 50  0001 C CNN "Package"
+F 8 "2019-RN73H1JTTD4123B25CT-ND" H 3500 4950 50  0001 C CNN "SPN"
 F 9 "412 kOhms ±0.1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Metal Film" H 3500 4950 50  0001 C CNN "description"
 	1    3500 4950
 	1    0    0    -1  
@@ -752,6 +806,7 @@ F 0 "JP1" H 6150 4455 50  0000 C CNN
 F 1 "VBB_Selection" H 6150 4364 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6150 4250 50  0001 C CNN
 F 3 "~" H 6150 4250 50  0001 C CNN
+F 4 "DNP" H 6150 4250 50  0001 C CNN "Assembly"
 	1    6150 4250
 	1    0    0    -1  
 $EndComp
@@ -775,6 +830,7 @@ F 0 "JP2" H 7550 4455 50  0000 C CNN
 F 1 "VDD_Selection" H 7550 4364 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 7550 4250 50  0001 C CNN
 F 3 "~" H 7550 4250 50  0001 C CNN
+F 4 "DNP" H 7550 4250 50  0001 C CNN "Assembly"
 	1    7550 4250
 	1    0    0    -1  
 $EndComp
@@ -852,4 +908,6 @@ F 3 "" H 9050 2000 50  0001 C CNN
 $EndComp
 Text Notes 5600 5350 0    50   ~ 0
 PCA9629A and motor are powered by the internal boost by \ndefault (5.5V). Cut and solder both jumpers to power the \ndriver (VIN_IC) and motor (VIN_M) through the external pin headers.
+Text Notes 1350 5200 0    59   ~ 0
+VIN: 1.8V - 5.5V
 $EndSCHEMATC
