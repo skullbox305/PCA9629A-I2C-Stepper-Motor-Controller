@@ -30,14 +30,6 @@ F 9 "Half Bridge (4) Driver DC Motors, General Purpose, Stepper Motors DMOS 10-M
 	1    3950 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 2150 3150 2150
-Wire Wire Line
-	3850 2300 3150 2300
-Wire Wire Line
-	3850 2600 3150 2600
-Wire Wire Line
-	3850 2750 3150 2750
 $Comp
 L power:GND #PWR0101
 U 1 1 5FDBCAF4
@@ -49,28 +41,12 @@ F 3 "" H 2700 2950 50  0001 C CNN
 	1    2700 2950
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5FDBCFE4
-P 2050 2650
-F 0 "#PWR0102" H 2050 2400 50  0001 C CNN
-F 1 "GND" H 2055 2477 50  0000 C CNN
-F 2 "" H 2050 2650 50  0001 C CNN
-F 3 "" H 2050 2650 50  0001 C CNN
-	1    2050 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 2650 2050 2500
 Wire Wire Line
 	2050 2350 2250 2350
 Wire Wire Line
 	2250 2500 2050 2500
-Connection ~ 2050 2500
-Wire Wire Line
-	2050 2500 2050 2350
-Text Notes 1250 2450 0    59   ~ 0
-I2C address: 40h
+Text Notes 900  2600 0    59   ~ 0
+Default I2C \naddress: 20h
 $Comp
 L Connector_Generic:Conn_01x10 J2
 U 1 1 5FDC3C47
@@ -86,7 +62,7 @@ $EndComp
 Text Notes 7600 800  0    79   ~ 0
 2.54mm Pin Header
 Text Label 2700 950  0    50   ~ 0
-VDD
+VCC
 Text Label 850  1550 0    50   ~ 0
 SCL
 Text Label 850  1650 0    50   ~ 0
@@ -128,8 +104,6 @@ Text Label 3350 1750 2    50   ~ 0
 P2
 Text Label 3350 1850 2    50   ~ 0
 P3
-Wire Wire Line
-	3850 2450 3500 2450
 $Comp
 L Device:C C2
 U 1 1 5FDCA847
@@ -175,7 +149,7 @@ $EndComp
 Connection ~ 6350 2550
 Wire Wire Line
 	6350 2550 6100 2550
-Text Label 3500 2450 0    50   ~ 0
+Text Label 3650 2450 0    50   ~ 0
 VBB
 Wire Wire Line
 	4600 2600 4850 2600
@@ -258,8 +232,8 @@ Wire Wire Line
 	6350 1700 6600 1700
 Wire Wire Line
 	6100 1700 6350 1700
-Text Notes 5100 1600 0    59   ~ 0
-VDD: 4.5V - 5.5V
+Text Notes 5350 1600 0    59   ~ 0
+4.5V - 5.5V
 Text Notes 5250 2450 0    59   ~ 0
 VBB: 4V - 18V
 Wire Notes Line
@@ -401,9 +375,9 @@ Wire Wire Line
 Text Label 9800 1900 0    50   ~ 0
 OUT1
 Text Label 9800 1800 0    50   ~ 0
-OUT3
-Text Label 9800 2100 0    50   ~ 0
 OUT2
+Text Label 9800 2100 0    50   ~ 0
+OUT3
 Text Label 9800 2000 0    50   ~ 0
 OUT4
 $Comp
@@ -416,32 +390,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8000 1950 50 
 F 3 "~" H 8000 1950 50  0001 C CNN
 F 4 "DNP" H 8000 1950 50  0001 C CNN "Assembly"
 	1    8000 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 1550 7350 1550
-Wire Wire Line
-	9050 1550 8600 1550
-$Comp
-L power:GND #PWR0106
-U 1 1 5FE434C6
-P 7350 1550
-F 0 "#PWR0106" H 7350 1300 50  0001 C CNN
-F 1 "GND" H 7355 1377 50  0000 C CNN
-F 2 "" H 7350 1550 50  0001 C CNN
-F 3 "" H 7350 1550 50  0001 C CNN
-	1    7350 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5FE43CDC
-P 9050 1550
-F 0 "#PWR0107" H 9050 1300 50  0001 C CNN
-F 1 "GND" H 9055 1377 50  0000 C CNN
-F 2 "" H 9050 1550 50  0001 C CNN
-F 3 "" H 9050 1550 50  0001 C CNN
-	1    9050 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -458,12 +406,12 @@ F 3 "" H 9050 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Locator_Library:MAX17291 U3
+L Locator_Library:MAX17291-WLP U3
 U 1 1 5FE52B80
 P 2450 4350
 F 0 "U3" H 3150 4400 50  0000 C CNN
 F 1 "MAX17291" H 2850 4100 50  0000 C CNN
-F 2 "Locator_Footprints:MAX17291ATA+T" H 2500 4400 50  0001 C CNN
+F 2 "Locator_Footprints:MAX17291ATA+" H 2500 4400 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/256/MAX17291-1915631.pdf" H 2500 4400 50  0001 C CNN
 F 4 "https://www.mouser.de/ProductDetail/Maxim-Integrated/MAX17291ANT%2b/?qs=zW32dvEIR3ttuHx2ZgpPng%3D%3D" H 2450 4350 50  0001 C CNN "Link"
 F 5 "MAX17291ANT+" H 2450 4350 50  0001 C CNN "MPN"
@@ -504,11 +452,6 @@ F 3 "" H 4200 3000 50  0001 C CNN
 $EndComp
 Text Notes 2000 3650 0    79   ~ 0
 5.5V Boost for logic and motor
-Wire Wire Line
-	2750 5000 2850 5000
-Connection ~ 2850 5000
-Wire Wire Line
-	2850 5000 2950 5000
 Wire Wire Line
 	2850 5000 2850 5100
 $Comp
@@ -567,10 +510,8 @@ F 9 "22µF ±20% 25V Ceramic Capacitor X5R 0805 (2012 Metric)" H 1400 4600 50  0
 	1    1400 4600
 	1    0    0    -1  
 $EndComp
-Text Label 2250 4800 0    50   ~ 0
+Text Label 2150 4800 0    50   ~ 0
 EN
-Wire Wire Line
-	2350 4800 2250 4800
 $Comp
 L power:GND #PWR0112
 U 1 1 5FDE2343
@@ -583,7 +524,7 @@ F 3 "" H 1400 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1250 4450 0    50   ~ 0
-VIN_BOOST
+VIN
 Wire Wire Line
 	1400 4450 1800 4450
 $Comp
@@ -674,21 +615,21 @@ Wire Wire Line
 	1400 4450 1250 4450
 Connection ~ 1400 4450
 Text Label 4750 4450 2    50   ~ 0
-VOUT
+VCC
 $Comp
 L Device:R R5
 U 1 1 5FDFBDC3
 P 3500 4600
 F 0 "R5" H 3570 4646 50  0000 L CNN
 F 1 "1.4M" H 3570 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4600 50  0001 C CNN
 F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 3500 4600 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/en/koa-speer-electronics-inc/RK73H1JTTD1404F/2019-RK73H1JTTD1404FCT-ND/9847488" H 3500 4600 50  0001 C CNN "Link"
-F 5 "RK73H1JTTD1404F" H 3500 4600 50  0001 C CNN "MPN"
+F 4 "https://www.digikey.de/product-detail/en/koa-speer-electronics-inc/RK73H1ETTP1404F/2019-RK73H1ETTP1404FCT-ND/12367547" H 3500 4600 50  0001 C CNN "Link"
+F 5 "RK73H1ETTP1404F" H 3500 4600 50  0001 C CNN "MPN"
 F 6 "KOA Speer Electronics, Inc." H 3500 4600 50  0001 C CNN "Manufacturer"
-F 7 "0603 (1608 Metric) " H 3500 4600 50  0001 C CNN "Package"
-F 8 "2019-RK73H1JTTD1404FCT-ND" H 3500 4600 50  0001 C CNN "SPN"
-F 9 "1.4 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 3500 4600 50  0001 C CNN "description"
+F 7 "0402 (1005 Metric) " H 3500 4600 50  0001 C CNN "Package"
+F 8 "2019-RK73H1ETTP1404FCT-ND" H 3500 4600 50  0001 C CNN "SPN"
+F 9 "1.4 MOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 3500 4600 50  0001 C CNN "description"
 F 10 "" H 3500 4600 50  0001 C CNN "Assembly"
 	1    3500 4600
 	1    0    0    -1  
@@ -702,14 +643,14 @@ U 1 1 5FDFC99D
 P 3500 4950
 F 0 "R6" H 3570 4996 50  0000 L CNN
 F 1 "412K" H 3570 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 4950 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/219/RN73H-1843478.pdf" H 3500 4950 50  0001 C CNN
-F 4 "https://www.digikey.de/product-detail/en/koa-speer-electronics-inc/RN73H1JTTD4123B25/2019-RN73H1JTTD4123B25CT-ND/10707107" H 3500 4950 50  0001 C CNN "Link"
-F 5 "RN73H1JTTD4123B25" H 3500 4950 50  0001 C CNN "MPN"
-F 6 "KOA Speer Electronics, Inc." H 3500 4950 50  0001 C CNN "Manufacturer"
-F 7 "0603 (1608 Metric) " H 3500 4950 50  0001 C CNN "Package"
-F 8 "2019-RN73H1JTTD4123B25CT-ND" H 3500 4950 50  0001 C CNN "SPN"
-F 9 "412 kOhms ±0.1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Metal Film" H 3500 4950 50  0001 C CNN "description"
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4950 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 3500 4950 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/panasonic-electronic-components/ERJ-2RKF4123X/P412KLCT-ND/194397" H 3500 4950 50  0001 C CNN "Link"
+F 5 "ERJ-2RKF4123X" H 3500 4950 50  0001 C CNN "MPN"
+F 6 "Panasonic Electronic Components" H 3500 4950 50  0001 C CNN "Manufacturer"
+F 7 "0402 (1005 Metric) " H 3500 4950 50  0001 C CNN "Package"
+F 8 "P412KLCT-ND" H 3500 4950 50  0001 C CNN "SPN"
+F 9 "412 kOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film" H 3500 4950 50  0001 C CNN "description"
 	1    3500 4950
 	1    0    0    -1  
 $EndComp
@@ -729,8 +670,6 @@ Wire Wire Line
 	4000 4450 4450 4450
 Wire Wire Line
 	3500 4450 4000 4450
-Text Notes 5850 3750 0    79   ~ 0
-Jumper Selection for use \nof internal or external power supply
 Wire Notes Line
 	600  3400 5300 3400
 Wire Notes Line
@@ -751,33 +690,29 @@ Connection ~ 1800 4450
 Wire Wire Line
 	1800 4450 2150 4450
 Wire Wire Line
-	5950 4250 5750 4250
+	6700 4400 6500 4400
+Wire Wire Line
+	7800 1550 7600 1550
 Wire Wire Line
 	7800 1650 7600 1650
 Wire Wire Line
-	7800 1750 7600 1750
+	8800 1550 8600 1550
 Wire Wire Line
 	8800 1650 8600 1650
-Wire Wire Line
-	8800 1750 8600 1750
-Text Label 7600 1650 0    50   ~ 0
+Text Label 7600 1550 0    50   ~ 0
 OUT1
-Text Label 7600 1750 0    50   ~ 0
-OUT3
 Text Label 8800 1650 2    50   ~ 0
-OUT2
-Text Label 8800 1750 2    50   ~ 0
 OUT4
-Text Label 5750 4250 0    50   ~ 0
-VOUT
+Text Label 6500 4400 0    50   ~ 0
+VCC
 Wire Wire Line
-	6150 4400 6150 4600
-Text Label 6150 4600 1    50   ~ 0
+	6900 4550 6900 4750
+Text Label 6900 4750 1    50   ~ 0
 VBB
 Wire Wire Line
-	6350 4250 6550 4250
-Text Label 6550 4250 2    50   ~ 0
-VIN_M
+	7100 4400 7300 4400
+Text Label 7300 4400 2    50   ~ 0
+VM
 Wire Notes Line
 	600  600  7050 600 
 Wire Wire Line
@@ -792,7 +727,7 @@ VBB
 Wire Wire Line
 	6350 1200 6350 1400
 Text Label 6350 1200 3    50   ~ 0
-VDD
+VCC
 Wire Wire Line
 	6100 1400 6350 1400
 Connection ~ 6350 1400
@@ -801,47 +736,19 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP1
 U 1 1 5FE7649B
-P 6150 4250
-F 0 "JP1" H 6150 4455 50  0000 C CNN
-F 1 "VBB_Selection" H 6150 4364 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6150 4250 50  0001 C CNN
-F 3 "~" H 6150 4250 50  0001 C CNN
-F 4 "DNP" H 6150 4250 50  0001 C CNN "Assembly"
-	1    6150 4250
+P 6900 4400
+F 0 "JP1" H 6900 4605 50  0000 C CNN
+F 1 "VBB_Selection" H 6900 4514 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 6900 4400 50  0001 C CNN
+F 3 "~" H 6900 4400 50  0001 C CNN
+F 4 "DNP" H 6900 4400 50  0001 C CNN "Assembly"
+	1    6900 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 4250 7150 4250
-Text Label 7150 4250 0    50   ~ 0
-VOUT
-Wire Wire Line
-	7550 4400 7550 4600
-Text Label 7550 4600 1    50   ~ 0
-VDD
-Wire Wire Line
-	7750 4250 7950 4250
-Text Label 7950 4250 2    50   ~ 0
-VIN_IC
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP2
-U 1 1 5FE8918D
-P 7550 4250
-F 0 "JP2" H 7550 4455 50  0000 C CNN
-F 1 "VDD_Selection" H 7550 4364 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 7550 4250 50  0001 C CNN
-F 3 "~" H 7550 4250 50  0001 C CNN
-F 4 "DNP" H 7550 4250 50  0001 C CNN "Assembly"
-	1    7550 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 2250 7600 2250
 Wire Wire Line
 	7800 2150 7600 2150
 Wire Wire Line
 	7800 2050 7600 2050
-Wire Wire Line
-	7800 1850 7600 1850
 Wire Wire Line
 	8600 1850 8800 1850
 Wire Wire Line
@@ -852,35 +759,29 @@ Wire Wire Line
 	8600 2250 8800 2250
 Wire Wire Line
 	8600 2350 8800 2350
-Text Label 7400 2350 0    50   ~ 0
-VIN_BOOST
-Wire Wire Line
-	7400 2350 7800 2350
+Text Label 7600 2250 0    50   ~ 0
+EN
 Wire Wire Line
 	7800 2450 7600 2450
 Text Label 7600 2450 0    50   ~ 0
-EN
-Text Label 7600 2050 0    50   ~ 0
+VIN
+Text Label 7600 1950 0    50   ~ 0
 P2
-Text Label 7600 2150 0    50   ~ 0
+Text Label 7600 2050 0    50   ~ 0
 P1
-Text Label 7600 2250 0    50   ~ 0
+Text Label 7600 2150 0    50   ~ 0
 P0
 Text Label 8800 1850 2    50   ~ 0
-VIN_M
-Text Label 7600 1850 0    50   ~ 0
-VIN_IC
-Wire Wire Line
-	7350 1950 7800 1950
+VM
 $Comp
 L power:GND #PWR0109
 U 1 1 5FE856A4
-P 7350 1950
-F 0 "#PWR0109" H 7350 1700 50  0001 C CNN
-F 1 "GND" H 7355 1777 50  0000 C CNN
-F 2 "" H 7350 1950 50  0001 C CNN
-F 3 "" H 7350 1950 50  0001 C CNN
-	1    7350 1950
+P 7300 2600
+F 0 "#PWR0109" H 7300 2350 50  0001 C CNN
+F 1 "GND" H 7305 2427 50  0000 C CNN
+F 2 "" H 7300 2600 50  0001 C CNN
+F 3 "" H 7300 2600 50  0001 C CNN
+	1    7300 2600
 	1    0    0    -1  
 $EndComp
 Text Label 8800 2050 2    50   ~ 0
@@ -906,8 +807,243 @@ F 3 "" H 9050 2000 50  0001 C CNN
 	1    9050 2000
 	1    0    0    -1  
 $EndComp
-Text Notes 5600 5350 0    50   ~ 0
-PCA9629A and motor are powered by the internal boost by \ndefault (5.5V). Cut and solder both jumpers to power the \ndriver (VIN_IC) and motor (VIN_M) through the external pin headers.
+Text Notes 5850 5350 0    50   ~ 0
+The motor is powered by the internal boost (5.5V). \nCut and solder the jumper to power the motor through \nthe external VM pin
 Text Notes 1350 5200 0    59   ~ 0
 VIN: 1.8V - 5.5V
+Text Notes 9500 1800 0    50   ~ 0
+Black
+Wire Wire Line
+	3150 2600 3300 2600
+Wire Wire Line
+	3150 2300 3300 2300
+Text Label 3300 2300 2    50   ~ 0
+O1
+Text Label 3300 2600 2    50   ~ 0
+O2
+Text Label 3650 2300 0    50   ~ 0
+O2
+Text Label 3650 2600 0    50   ~ 0
+O1
+Wire Wire Line
+	3150 2150 3300 2150
+Wire Wire Line
+	3150 2750 3300 2750
+Wire Wire Line
+	3850 2750 3650 2750
+Wire Wire Line
+	3650 2600 3850 2600
+Wire Wire Line
+	3650 2300 3850 2300
+Wire Wire Line
+	3850 2150 3650 2150
+Wire Wire Line
+	3850 2450 3650 2450
+Text Label 3300 2150 2    50   ~ 0
+O0
+Text Label 3300 2750 2    50   ~ 0
+O3
+Text Label 3650 2150 0    50   ~ 0
+O0
+Text Label 3650 2750 0    50   ~ 0
+O3
+Wire Wire Line
+	7300 2350 7800 2350
+Wire Wire Line
+	7800 1950 7600 1950
+Wire Wire Line
+	2150 4800 2350 4800
+$Comp
+L Device:R R7
+U 1 1 60169525
+P 9350 4400
+F 0 "R7" H 9420 4446 50  0000 L CNN
+F 1 "10K" H 9420 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9280 4400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf" H 9350 4400 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/yageo/AC0603JR-0710KL/311-10KLECT-ND/2828151" H 9350 4400 50  0001 C CNN "Link"
+F 5 "AC0603JR-0710KL" H 9350 4400 50  0001 C CNN "MPN"
+F 6 "Yageo" H 9350 4400 50  0001 C CNN "Manufacturer"
+F 7 "0603 (1608 Metric) " H 9350 4400 50  0001 C CNN "Package"
+F 8 "311-10KLECT-ND" H 9350 4400 50  0001 C CNN "SPN"
+F 9 "10 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 9350 4400 50  0001 C CNN "description"
+	1    9350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60169B1F
+P 10200 4400
+F 0 "R8" H 10270 4446 50  0000 L CNN
+F 1 "10K" H 10270 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10130 4400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf" H 10200 4400 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/yageo/AC0603JR-0710KL/311-10KLECT-ND/2828151" H 10200 4400 50  0001 C CNN "Link"
+F 5 "AC0603JR-0710KL" H 10200 4400 50  0001 C CNN "MPN"
+F 6 "Yageo" H 10200 4400 50  0001 C CNN "Manufacturer"
+F 7 "0603 (1608 Metric) " H 10200 4400 50  0001 C CNN "Package"
+F 8 "311-10KLECT-ND" H 10200 4400 50  0001 C CNN "SPN"
+F 9 "10 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 10200 4400 50  0001 C CNN "description"
+	1    10200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60169F8C
+P 9350 4850
+F 0 "D1" V 9389 4732 50  0000 R CNN
+F 1 "LED" V 9298 4732 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9350 4850 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493517/LS%20L29K.pdf" H 9350 4850 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LS-L29K-G1H2-1-Z/475-3124-1-ND/4899561" H 9350 4850 50  0001 C CNN "Link"
+F 5 "LS L29K-G1H2-1-Z" H 9350 4850 50  0001 C CNN "MPN"
+F 6 "OSRAM Opto Semiconductors Inc." H 9350 4850 50  0001 C CNN "Manufacturer"
+F 7 "0603 (1608 Metric) " H 9350 4850 50  0001 C CNN "Package"
+F 8 "475-3124-1-ND" H 9350 4850 50  0001 C CNN "SPN"
+F 9 "Red 630nm LED Indication - Discrete Vf=1.8V 0603 (1608 Metric)" H 9350 4850 50  0001 C CNN "description"
+	1    9350 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6016ADE2
+P 10200 4850
+F 0 "D2" V 10239 4732 50  0000 R CNN
+F 1 "LED" V 10148 4732 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10200 4850 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493517/LS%20L29K.pdf" H 10200 4850 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LS-L29K-G1H2-1-Z/475-3124-1-ND/4899561" H 10200 4850 50  0001 C CNN "Link"
+F 5 "LS L29K-G1H2-1-Z" H 10200 4850 50  0001 C CNN "MPN"
+F 6 "OSRAM Opto Semiconductors Inc." H 10200 4850 50  0001 C CNN "Manufacturer"
+F 7 "0603 (1608 Metric) " H 10200 4850 50  0001 C CNN "Package"
+F 8 "475-3124-1-ND" H 10200 4850 50  0001 C CNN "SPN"
+F 9 "Red 630nm LED Indication - Discrete Vf=1.8V 0603 (1608 Metric)" H 10200 4850 50  0001 C CNN "description"
+	1    10200 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 4700 10200 4550
+Wire Wire Line
+	9350 4700 9350 4550
+Wire Wire Line
+	9350 4250 9350 3950
+Wire Wire Line
+	10200 4250 10200 3950
+Wire Wire Line
+	9350 5000 9350 5250
+Wire Wire Line
+	10200 5000 10200 5250
+$Comp
+L power:GND #PWR0117
+U 1 1 60181ABB
+P 9350 5250
+F 0 "#PWR0117" H 9350 5000 50  0001 C CNN
+F 1 "GND" H 9355 5077 50  0000 C CNN
+F 2 "" H 9350 5250 50  0001 C CNN
+F 3 "" H 9350 5250 50  0001 C CNN
+	1    9350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 60182178
+P 10200 5250
+F 0 "#PWR0118" H 10200 5000 50  0001 C CNN
+F 1 "GND" H 10205 5077 50  0000 C CNN
+F 2 "" H 10200 5250 50  0001 C CNN
+F 3 "" H 10200 5250 50  0001 C CNN
+	1    10200 5250
+	1    0    0    -1  
+$EndComp
+Text Label 9350 3950 3    50   ~ 0
+VCC
+Text Label 10200 3950 3    50   ~ 0
+P3
+Wire Notes Line
+	8450 5600 8450 3400
+Wire Notes Line
+	8450 3400 11100 3400
+Wire Notes Line
+	11100 3400 11100 5600
+Wire Notes Line
+	11100 5600 8450 5600
+Text Notes 9650 3650 0    79   ~ 0
+LEDs
+Text Notes 6200 3750 0    79   ~ 0
+Internal/external motor \npower supply selection
+Text Label 7600 1650 0    50   ~ 0
+OUT2
+Text Label 8800 1550 2    50   ~ 0
+OUT3
+Wire Wire Line
+	7300 2350 7300 2600
+Wire Wire Line
+	7800 2250 7600 2250
+Text Notes 9600 3150 0    50   ~ 0
+For use with the "SM1507GB(100)" \nmini stepper motor
+Text Notes 9500 1900 0    50   ~ 0
+White
+Text Notes 9500 2000 0    50   ~ 0
+Orange
+Text Notes 9500 2100 0    50   ~ 0
+Yellow
+Wire Wire Line
+	7800 1750 7600 1750
+Wire Wire Line
+	7800 1850 7600 1850
+Text Label 2050 2350 0    50   ~ 0
+AD1
+Text Label 2050 2500 0    50   ~ 0
+AD0
+Text Label 7600 1750 0    50   ~ 0
+AD1
+Text Label 7600 1850 0    50   ~ 0
+AD0
+Wire Wire Line
+	9050 1950 9050 1750
+Wire Wire Line
+	9050 1750 8600 1750
+Connection ~ 9050 1950
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 601C6894
+P 1900 2350
+F 0 "JP2" H 1900 2463 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 1900 2464 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 1900 2350 50  0001 C CNN
+F 3 "~" H 1900 2350 50  0001 C CNN
+	1    1900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP3
+U 1 1 601C7AE3
+P 1900 2500
+F 0 "JP3" H 1900 2400 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 1900 2614 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 1900 2500 50  0001 C CNN
+F 3 "~" H 1900 2500 50  0001 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2350 1600 2350
+Wire Wire Line
+	1600 2350 1600 2500
+Wire Wire Line
+	1750 2500 1600 2500
+Connection ~ 1600 2500
+Wire Wire Line
+	1600 2500 1600 2650
+$Comp
+L power:GND #PWR0102
+U 1 1 601D3226
+P 1600 2650
+F 0 "#PWR0102" H 1600 2400 50  0001 C CNN
+F 1 "GND" H 1605 2477 50  0000 C CNN
+F 2 "" H 1600 2650 50  0001 C CNN
+F 3 "" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

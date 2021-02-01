@@ -1,4 +1,4 @@
-update=06/01/2021 01:22:00
+update=01/02/2021 12:06:17
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=i2c_stepper_driver_breakout.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -43,7 +43,7 @@ TrackWidth2=0.25
 TrackWidth3=0.3
 TrackWidth4=0.5
 TrackWidth5=0.8
-ViaDiameter1=0.8
+ViaDiameter1=0.6
 ViaDrill1=0.35
 ViaDiameter2=0.4
 ViaDrill2=0.2
@@ -51,6 +51,8 @@ ViaDiameter3=0.5
 ViaDrill3=0.15
 ViaDiameter4=0.5
 ViaDrill4=0.25
+ViaDiameter5=0.6
+ViaDrill5=0.25
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -85,11 +87,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -247,9 +249,9 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.15
+Clearance=0.1
 TrackWidth=0.15
-ViaDiameter=0.8
+ViaDiameter=0.6
 ViaDrill=0.35
 uViaDiameter=0.3
 uViaDrill=0.1

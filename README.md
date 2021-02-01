@@ -4,7 +4,7 @@
 
   - NXP PCA9629A I²C Stepper Controller
   - Allegro A3909 Dual Full Bridge Motor Driver
-  - Maxim Integrated MAX17291 5.5V Boost Converter powering the controller and motor driver (can be deselected through jumpers to power a stepper motor up to 18V)
+  - Maxim Integrated MAX17291 5.5V Boost Converter powering the controller and motor (can be deselected through a jumper to power a motor up to 18V)
   
 
 ![image info](./i2c_stepper_driver_breakout_front.png)
